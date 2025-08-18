@@ -20,7 +20,7 @@ class _OnboardingsViewState extends State<OnboardingsView> {
   Future init() async {
     await Adapty().activate(
         configuration: AdaptyConfiguration(
-            apiKey: "public_live_i6bLVH4H.2Hy1dsU5ajCAkaRyYgf2"));
+            apiKey: API_KEY));
     print("activated get");
     onboarding = await Adapty().getOnboarding(
       placementId: "main",
