@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'screens/onboardings_view.dart';
+import 'screens/paywall_view.dart';
 
 void main() {
   runApp(MyApp());
@@ -19,7 +19,7 @@ class _MyAppState extends State<MyApp> {
 
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: OnboardingsView(),
+      home: PaywallView(),
     );
   }
 }
