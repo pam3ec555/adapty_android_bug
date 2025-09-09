@@ -37,9 +37,15 @@ class _OnboardingsViewState extends State<OnboardingsView> {
           ? const Center(child: CircularProgressIndicator())
           : AdaptyUIOnboardingPlatformView(
               onboarding: onboarding!,
+              onPaywallAction: (action, meta) {
+                print("PAYWALL ACTION: $action, $meta");
+              },
               onDidFinishLoading: (onboarding) {
                 // Does not work on android
                 print("FINISH LOADING");
+              },
+              onDidFailWithError: (error) {
+                print("ERROR: $error");
               },
             ),
     );
